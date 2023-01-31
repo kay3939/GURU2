@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D2E2F2"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".dic.AddFragment">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="단어 추가하기"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#323232"
+        app:fontFamily="sans-serif-black" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/wordInputView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:boxStrokeColor="#38A7FF"
+        app:endIconTint="#38A7FF"
+        app:hintTextColor="#38A7FF"
+        app:startIconTint="#38A7FF">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FAFAFA"
+            android:hint="단어를 입력해주세요." />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/meanInputView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:boxStrokeColor="#38A7FF"
+        app:endIconTint="#38A7FF"
+        app:hintTextColor="#38A7FF"
+        app:startIconTint="#38A7FF">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FAFAFA"
+            android:hint="뜻을 입력해주세요." />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:text="추가"
+        android:textColor="#0F95FF"
+        android:textStyle="bold"
+        app:backgroundTint="#FFFFFF"
+        app:iconTint="#38A7FF"
+        app:strokeColor="#0F95FF" />
+
+</LinearLayout>

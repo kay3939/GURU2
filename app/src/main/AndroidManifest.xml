@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.swuvoca">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="SwuVoca"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyVoca"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.example.swuvoca.check.StarCheckActivity"></activity>
+
+
+        <activity android:name="com.example.swuvoca.quiz.QuizPuzzleActivity" />
+
+        <activity android:name="com.example.swuvoca.quiz.QuizListeningActivity" />
+        <activity android:name="com.example.swuvoca.quiz.QuizEssayActivity" />
+        <activity android:name="com.example.swuvoca.quiz.QuizMutlipleActivity" />
+        <activity android:name="com.example.swuvoca.study.DayStudyActivity" />
+        <activity android:name="com.example.swuvoca.study.StudyActivity" />
+        <activity android:name="com.example.swuvoca.quiz.QuizActivity" />
+        <activity android:name="com.example.swuvoca.dic.DicActivity" />
+        <activity android:name="com.example.swuvoca.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
